@@ -4,11 +4,11 @@
 	include_once(dirname(__FILE__)."/../php/autologin.php");
 	
 	class Main {
-		private $all = "/^(?:https?:\/\/)?(?:www.)?(\w*?)\.[a-z]*?[\/\\\\]?$/";
-		private $http_www = "/^(?:https?:\/\/)(?:www.)(\w*?)\.[a-z]*?[\/\\\\]?$/";
-		private $http = "/^(?:https?:\/\/)(\w*?)\.[a-z]*?[\/\\\\]?$/";
-		private $www = "/^(?:www.)(\w*?)\.[a-z]*?[\/\\\\]?$/";
-		private $none = "/^(\w*?)\.[a-z]*?[\/\\\\]?$/";
+		private $all = "/^(?:https?:\/\/)?(?:www.)?(\w*?)\.[a-z\.]*?[\/\\\\]?$/";
+		private $http_www = "/^(?:https?:\/\/)(?:www.)(\w*?)\.[a-z\.]*?[\/\\\\]?$/";
+		private $http = "/^(?:https?:\/\/)(\w*?)\.[a-z\.]*?[\/\\\\]?$/";
+		private $www = "/^(?:www.)(\w*?)\.[a-z\.]*?[\/\\\\]?$/";
+		private $none = "/^(\w*?)\.[a-z\.]*?[\/\\\\]?$/";
 
 		public function __construct() {
 			global $database, $util;
